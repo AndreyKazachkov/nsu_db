@@ -56,7 +56,7 @@ CREATE USER <username> WITH SUPERUSER;
 $ createdb <dbname>
 ```
 В моём случае:
-- '<dbname>` = `olympics` или любое другое удобное вам имя
+- `<dbname>` = `olympics` или любое другое удобное вам имя
 Добавьте `olympics.sql` в PostgreSQL:
 ```sh
 psql -d <dbname> -f olympics.sql
