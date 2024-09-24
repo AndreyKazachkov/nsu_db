@@ -51,19 +51,30 @@ CREATE USER <username> WITH SUPERUSER;
 
 ## Загрузка базы данных
 Скачайте файл с базой данных (`olympics.sql`) из этого репозитория. 
-Создайте базу данных внутри PostgreSQL:
-```
-$ psql -d postgres
-```
-```sql
-# CREATE DATABASE <dbname>;
-```
-Затем выйдете из psql (`\q`) и добавьте `olympics.sql` в PostgreSQL:
+Создайте базу данных PostgreSQL (из консоли):
 ```sh
-psql -U <username> -d <dbname> -f olympics.sql
+$ createdb <dbname>
 ```
 В моём случае:
-- `<username>` = `andrey`
-- `<dbname>` = `olympics` или любое другое удобное вам имя
+- '<dbname>` = `olympics` или любое другое удобное вам имя
+Добавьте `olympics.sql` в PostgreSQL:
+```sh
+psql -d <dbname> -f olympics.sql
+```
+
+# Полезные команды
+Чтобы выполнять sql-запрос из файла, воспользуйтесь мета-командой '\i':
+```sql
+\i /path/to/your_query.sql
+```
+Чтобы посмотреть, каким пользователям принадлежат базы данных, воспользуйтесь мета-командой `\l`:
+```sql
+\l
+```
+Чтобы посмотреть, от какого имени какого пользователя вы сейчас работаете, выполните:
+```sql
+select current_user;
+```
+**Все доступные** мета-команды можно посмотреть, выполнив команду `\?`.
 
 Готово! Теперь можно выполнять [задание](https://15445.courses.cs.cmu.edu/fall2024/homework1/).
