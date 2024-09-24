@@ -50,7 +50,15 @@ CREATE USER <username> WITH SUPERUSER;
 ```
 
 ## Загрузка базы данных
-Скачайте файл с базой данных (`olympics.sql`) из этого репозитория. Добавьте её в PostgreSQL:
+Скачайте файл с базой данных (`olympics.sql`) из этого репозитория. 
+Создайте базу данных внутри PostgreSQL:
+```
+$ psql -d postgres
+```
+```sql
+# CREATE DATABASE <dbname>;
+```
+Затем выйдете из psql (`\q`) и добавьте `olympics.sql` в PostgreSQL:
 ```sh
 psql -U <username> -d <dbname> -f olympics.sql
 ```
