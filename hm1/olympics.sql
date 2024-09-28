@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: athletes; Type: TABLE; Schema: public; Owner: andrey
+-- Name: athletes; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.athletes (
@@ -41,10 +41,8 @@ CREATE TABLE public.athletes (
 );
 
 
-ALTER TABLE public.athletes OWNER TO andrey;
-
 --
--- Name: coaches; Type: TABLE; Schema: public; Owner: andrey
+-- Name: coaches; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.coaches (
@@ -58,10 +56,8 @@ CREATE TABLE public.coaches (
 );
 
 
-ALTER TABLE public.coaches OWNER TO andrey;
-
 --
--- Name: countries; Type: TABLE; Schema: public; Owner: andrey
+-- Name: countries; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.countries (
@@ -75,10 +71,8 @@ CREATE TABLE public.countries (
 );
 
 
-ALTER TABLE public.countries OWNER TO andrey;
-
 --
--- Name: gender; Type: TABLE; Schema: public; Owner: andrey
+-- Name: gender; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.gender (
@@ -87,10 +81,8 @@ CREATE TABLE public.gender (
 );
 
 
-ALTER TABLE public.gender OWNER TO andrey;
-
 --
--- Name: medal_info; Type: TABLE; Schema: public; Owner: andrey
+-- Name: medal_info; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.medal_info (
@@ -99,10 +91,8 @@ CREATE TABLE public.medal_info (
 );
 
 
-ALTER TABLE public.medal_info OWNER TO andrey;
-
 --
--- Name: medals; Type: TABLE; Schema: public; Owner: andrey
+-- Name: medals; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.medals (
@@ -114,10 +104,8 @@ CREATE TABLE public.medals (
 );
 
 
-ALTER TABLE public.medals OWNER TO andrey;
-
 --
--- Name: results; Type: TABLE; Schema: public; Owner: andrey
+-- Name: results; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.results (
@@ -133,10 +121,8 @@ CREATE TABLE public.results (
 );
 
 
-ALTER TABLE public.results OWNER TO andrey;
-
 --
--- Name: teams; Type: TABLE; Schema: public; Owner: andrey
+-- Name: teams; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.teams (
@@ -149,10 +135,8 @@ CREATE TABLE public.teams (
 );
 
 
-ALTER TABLE public.teams OWNER TO andrey;
-
 --
--- Name: tokyo_medals; Type: TABLE; Schema: public; Owner: andrey
+-- Name: tokyo_medals; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.tokyo_medals (
@@ -163,10 +147,8 @@ CREATE TABLE public.tokyo_medals (
 );
 
 
-ALTER TABLE public.tokyo_medals OWNER TO andrey;
-
 --
--- Name: venues; Type: TABLE; Schema: public; Owner: andrey
+-- Name: venues; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.venues (
@@ -177,10 +159,8 @@ CREATE TABLE public.venues (
 );
 
 
-ALTER TABLE public.venues OWNER TO andrey;
-
 --
--- Data for Name: athletes; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: athletes; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.athletes (code, name, gender, function, country_code, nationality_code, height, weight, disciplines, events, birth_date, occupation, lang) FROM stdin;
@@ -11298,7 +11278,7 @@ COPY public.athletes (code, name, gender, function, country_code, nationality_co
 
 
 --
--- Data for Name: coaches; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: coaches; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.coaches (code, name, gender, function, country_code, discipline, birth_date) FROM stdin;
@@ -12280,7 +12260,7 @@ COPY public.coaches (code, name, gender, function, country_code, discipline, bir
 
 
 --
--- Data for Name: countries; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: countries; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.countries (code, country, country_long, population, "GDP ($ per capita)", latitude, longitude) FROM stdin;
@@ -12512,7 +12492,7 @@ VEN	Venezuela	Venezuela	25730435	4800	6.42375	-66.58973
 
 
 --
--- Data for Name: gender; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: gender; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.gender (id, name) FROM stdin;
@@ -12522,7 +12502,7 @@ COPY public.gender (id, name) FROM stdin;
 
 
 --
--- Data for Name: medal_info; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: medal_info; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.medal_info (code, name) FROM stdin;
@@ -12533,7 +12513,7 @@ COPY public.medal_info (code, name) FROM stdin;
 
 
 --
--- Data for Name: medals; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: medals; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.medals (medal_code, medal_date, discipline, event, winner_code) FROM stdin;
@@ -13585,7 +13565,7 @@ COPY public.medals (medal_code, medal_date, discipline, event, winner_code) FROM
 
 
 --
--- Data for Name: results; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: results; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.results (date, event_name, discipline_name, venue, participant_code, participant_type, rank, result, result_type) FROM stdin;
@@ -34909,7 +34889,7 @@ COPY public.results (date, event_name, discipline_name, venue, participant_code,
 
 
 --
--- Data for Name: teams; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: teams; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.teams (code, team, country_code, discipline, events, athletes_code) FROM stdin;
@@ -42725,7 +42705,7 @@ WPOWTEAM7---USA01	United States of America	USA	Water Polo	Women	1908381
 
 
 --
--- Data for Name: tokyo_medals; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: tokyo_medals; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.tokyo_medals (country_code, gold_medal, silver_medal, bronze_medal) FROM stdin;
@@ -42826,7 +42806,7 @@ ARG	0	1	2
 
 
 --
--- Data for Name: venues; Type: TABLE DATA; Schema: public; Owner: andrey
+-- Data for Name: venues; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.venues (venue, disciplines, date_start, date_end) FROM stdin;
@@ -42869,7 +42849,7 @@ Yves-du-Manoir Stadium	['Hockey']	2024-07-27 08:00:00	2024-08-09 20:30:00
 
 
 --
--- Name: gender idx_16426_sqlite_autoindex_gender_1; Type: CONSTRAINT; Schema: public; Owner: andrey
+-- Name: gender idx_16426_sqlite_autoindex_gender_1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.gender
@@ -42877,7 +42857,7 @@ ALTER TABLE ONLY public.gender
 
 
 --
--- Name: medal_info idx_16436_sqlite_autoindex_medal_info_1; Type: CONSTRAINT; Schema: public; Owner: andrey
+-- Name: medal_info idx_16436_sqlite_autoindex_medal_info_1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.medal_info
@@ -42885,63 +42865,63 @@ ALTER TABLE ONLY public.medal_info
 
 
 --
--- Name: idx_16396_ix_athletes_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16396_ix_athletes_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16396_ix_athletes_code ON public.athletes USING btree (code);
 
 
 --
--- Name: idx_16401_ix_teams_athletes_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16401_ix_teams_athletes_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16401_ix_teams_athletes_code ON public.teams USING btree (athletes_code);
 
 
 --
--- Name: idx_16401_ix_teams_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16401_ix_teams_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16401_ix_teams_code ON public.teams USING btree (code);
 
 
 --
--- Name: idx_16406_ix_tokyo_medals_country_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16406_ix_tokyo_medals_country_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16406_ix_tokyo_medals_country_code ON public.tokyo_medals USING btree (country_code);
 
 
 --
--- Name: idx_16411_ix_venues_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16411_ix_venues_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16411_ix_venues_code ON public.venues USING btree (venue);
 
 
 --
--- Name: idx_16416_ix_coaches_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16416_ix_coaches_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16416_ix_coaches_code ON public.coaches USING btree (code);
 
 
 --
--- Name: idx_16421_ix_countries_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16421_ix_countries_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16421_ix_countries_code ON public.countries USING btree (code);
 
 
 --
--- Name: idx_16431_ix_medals_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16431_ix_medals_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16431_ix_medals_code ON public.medals USING btree (medal_code);
 
 
 --
--- Name: idx_16431_ix_medals_winner_code; Type: INDEX; Schema: public; Owner: andrey
+-- Name: idx_16431_ix_medals_winner_code; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX idx_16431_ix_medals_winner_code ON public.medals USING btree (winner_code);
